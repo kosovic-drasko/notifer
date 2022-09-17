@@ -5,9 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="705576c0-b397-4219-be09-83b87dd0c913" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/Ponudjaci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/domain/Ponudjaci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/repository/PonudjaciRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/web/rest/PonudjaciResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220917192144_added_entity_Ponudjaci.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/ponudjaci.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/ponudjaci.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/ponudjaci.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/route/ponudjaci-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/route/ponudjaci-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/route/ponudjaci-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/service/ponudjaci.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/service/ponudjaci.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/myapp/domain/PonudjaciTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/myapp/web/rest/PonudjaciResourceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.yo-rc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/config/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/config/CacheConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-heroku.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/bootstrap-heroku.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +49,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -26,17 +62,25 @@
     </option>
   </component>
   <component name="ProjectId" id="2Eu4MFexEZP5uRyOaUhUyO9w7CI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\pc\\IdeaProjects\\notifer\\node_modules\\typescript\\lib"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -74,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663432100856</updated>
-      <workItem from="1663432102269" duration="700000" />
+      <workItem from="1663432102269" duration="3718000" />
     </task>
     <servers />
   </component>
@@ -91,5 +135,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

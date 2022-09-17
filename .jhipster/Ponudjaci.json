@@ -1,0 +1,16 @@
+{
+  "changelogDate": "20220917192144",
+  "fields": [
+    {
+      "fieldName": "naziv",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "minlength"],
+      "fieldValidateRulesMinlength": "3"
+    }
+  ],
+  "name": "Ponudjaci",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
