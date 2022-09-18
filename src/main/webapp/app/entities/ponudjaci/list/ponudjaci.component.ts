@@ -5,6 +5,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { IPonudjaci } from '../ponudjaci.model';
 import { PonudjaciService } from '../service/ponudjaci.service';
 import { PonudjaciDeleteDialogComponent } from '../delete/ponudjaci-delete-dialog.component';
+import { NotificationService } from '../../../shared/Notification.service';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'jhi-ponudjaci',
@@ -14,7 +16,11 @@ export class PonudjaciComponent implements OnInit {
   ponudjacis?: IPonudjaci[];
   isLoading = false;
 
-  constructor(protected ponudjaciService: PonudjaciService, protected modalService: NgbModal) {}
+  constructor(
+    protected ponudjaciService: PonudjaciService,
+    protected modalService: NgbModal,
+    private notificationService: NotificationService
+  ) {}
 
   loadAll(): void {
     this.isLoading = true;
@@ -44,8 +50,27 @@ export class PonudjaciComponent implements OnInit {
     // unsubscribe not needed because closed completes on modal close
     modalRef.closed.subscribe(reason => {
       if (reason === 'deleted') {
+        this.successMessage$.subscribe();
         this.loadAll();
       }
     });
   }
+  successMessage$ = this.notificationService.successMessageAction$.pipe(
+    tap(message => {
+      if (message) {
+        setTimeout(() => {
+          this.notificationService.clearAllMessages();
+        }, 5000);
+      }
+    })
+  );
+  errorMessage$ = this.notificationService.errorMessageAction$.pipe(
+    tap(message => {
+      if (message) {
+        setTimeout(() => {
+          this.notificationService.clearAllMessages();
+        }, 5000);
+      }
+    })
+  );
 }

@@ -19,10 +19,17 @@
       </button>
     </div>
   </h2>
+  <div class="container">
+    <div class="alert alert-success" *ngIf="successMessage$ | async as successMessage">
+      {{ successMessage }}
+    </div>
+    <div class="alert alert-danger" *ngIf="errorMessage$ | async as errorMessage">
+      {{ errorMessage }}
+    </div>
+  </div>
+  <!--  <jhi-alert-error></jhi-alert-error>-->
 
-  <jhi-alert-error></jhi-alert-error>
-
-  <jhi-alert></jhi-alert>
+  <!--  <jhi-alert></jhi-alert>-->
 
   <div class="alert alert-warning" id="no-result" *ngIf="ponudjacis?.length === 0">
     <span>No ponudjacis found</span>

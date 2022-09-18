@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="705576c0-b397-4219-be09-83b87dd0c913" name="Changes" comment="init" />
+    <list default="true" id="705576c0-b397-4219-be09-83b87dd0c913" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/Notification.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/service/ponudjaci.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/service/ponudjaci.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/pc/IdeaProjects/notifer/src/main/webapp/app/shared",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "C:\\Users\\pc\\IdeaProjects\\notifer\\node_modules\\typescript\\lib"
   },
@@ -52,11 +60,17 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.NotiferApp">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\IdeaProjects\notifer\src\main\webapp\app\shared" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
     <configuration name="NotiferApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
       <module name="notifer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mycompany.myapp.NotiferApp" />
       <method v="2">
@@ -73,6 +87,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="Spring Boot.NotiferApp" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663432100856</updated>
-      <workItem from="1663432102269" duration="5323000" />
+      <workItem from="1663432102269" duration="9621000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1663443972912</created>

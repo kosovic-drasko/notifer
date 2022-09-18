@@ -3,10 +3,11 @@ import { HttpResponse } from '@angular/common/http';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
-import { finalize } from 'rxjs/operators';
+import { finalize, tap } from 'rxjs/operators';
 
 import { IPonudjaci, Ponudjaci } from '../ponudjaci.model';
 import { PonudjaciService } from '../service/ponudjaci.service';
+import { NotificationService } from '../../../shared/Notification.service';
 
 @Component({
   selector: 'jhi-ponudjaci-update',
@@ -20,7 +21,12 @@ export class PonudjaciUpdateComponent implements OnInit {
     naziv: [null, [Validators.required, Validators.minLength(3)]],
   });
 
-  constructor(protected ponudjaciService: PonudjaciService, protected activatedRoute: ActivatedRoute, protected fb: FormBuilder) {}
+  constructor(
+    protected ponudjaciService: PonudjaciService,
+    protected activatedRoute: ActivatedRoute,
+    protected fb: FormBuilder,
+    private notificationService: NotificationService
+  ) {}
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({ ponudjaci }) => {
@@ -50,6 +56,7 @@ export class PonudjaciUpdateComponent implements OnInit {
   }
 
   protected onSaveSuccess(): void {
+    this.errorMessage$;
     this.previousState();
   }
 
@@ -75,4 +82,23 @@ export class PonudjaciUpdateComponent implements OnInit {
       naziv: this.editForm.get(['naziv'])!.value,
     };
   }
+
+  successMessage$ = this.notificationService.successMessageAction$.pipe(
+    tap(message => {
+      if (message) {
+        setTimeout(() => {
+          this.notificationService.clearAllMessages();
+        }, 5000);
+      }
+    })
+  );
+  errorMessage$ = this.notificationService.errorMessageAction$.pipe(
+    tap(message => {
+      if (message) {
+        setTimeout(() => {
+          this.notificationService.clearAllMessages();
+        }, 5000);
+      }
+    })
+  );
 }
